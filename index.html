@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -381,135 +382,139 @@
   </main>
 
 
-  <footer class="footer">
-    <div class="footer-container container">
-      <div class="footer-description">
-        <a class="logo" href="/">
-          Web<span class="footer-logo-text">Studio</span>
-        </a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
-      </div>
-  
-      <div class="footer-social-subscribe">
-        <div class="footer-social">
-          <p class="social-text">Social media</p>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-  
-      <div class="footer-container">
-        <div class="footer-subscribe">
-          <p class="footer-text">Subscribe</p>
-          <form class="footer-form">
-            <label class="footer-label">
-              <input class="footer-input" type="email" name="user-email" placeholder="E-mail" />
-            </label>
-            <button class="footer-button" type="submit">
-              Subscribe
-              <svg class="footer-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
+<footer class="footer">
+  <div class="footer-container container">
+    <!-- Лівий блок: логотип і опис -->
+    <div class="footer-description">
+      <a class="logo-link" href="/">
+        Web<span class="footer-logo-text">Studio</span>
+      </a>
+      <p class="footer-text">
+        Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+      </p>
+    </div>
+
+    <!-- Правий блок: соціальні мережі і форма -->
+    <div class="footer-social-subscribe">
+      <!-- Соціальні мережі -->
+      <div class="social-wrapper">
+        <p class="social-heading">Social media</p>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
-            </button>
-          </form>
-        </div>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Форма підписки -->
+      <div class="footer-form-wrapper">
+        <p class="form-heading-text">Subscribe</p>
+        <form class="footer-form">
+          <label class="form-label">
+            <input class="form-input" type="email" name="user-email" placeholder="E-mail" />
+          </label>
+          <button class="form-button" type="submit">
+            Subscribe
+            <svg class="form-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
-  </footer>
-
-
-<div class="backdrop" data-modal>
-  <div class="modal">
-    <button class="close-button" type="button" data-modal-close>
-      <svg class="close-icon" width="24" height="24">
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-
-    <p class="modal-text">
-      Leave your contacts and we will call you back
-    </p>
-
-    <form class="modal-form">
-      <div class="modal-field">
-        <label class="modal-label" for="user-name">Name</label>
-        <div class="modal-prefix">
-          <input class="modal-input" type="text" name="user-name" id="user-name" required>
-          <svg class="input-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="modal-field">
-        <label class="modal-label" for="user-phone">Phone</label>
-        <div class="modal-prefix">
-          <input class="modal-input" type="tel" name="user-phone" id="user-phone" required>
-          <svg class="input-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="modal-field">
-        <label class="modal-label" for="user-email">Email</label>
-        <div class="modal-prefix">
-          <input class="modal-input" type="email" name="user-email" id="user-email" required>
-          <svg class="input-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="modal-field">
-        <label class="modal-label" for="user-comment">Comment</label>
-        <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
-      </div>
-      
-      <div class="modal-checkbox">
-        <label class="custom-checkbox">
-          <input type="checkbox" id="privacy-policy" required>
-          <span class="checkbox-icon">
-            <svg class="checkmark" width="10" height="6">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-          </span>
-          I accept the terms and conditions of the <a href="#">Privacy Policy</a>
-        </label>
-      </div>
-        <button class="modal-button" type="submit">send</button>
-    </form>
   </div>
-</div>
+</footer>
 
-<script src="./js/modal.js"></script>
+
+
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="close-button" type="button" data-modal-close>
+        <svg class="close-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <p class="modal-text">
+        Leave your contacts and we will call you back
+      </p>
+
+      <form class="modal-form">
+        <div class="modal-field">
+          <label class="modal-label" for="user-name">Name</label>
+          <div class="modal-prefix">
+            <input class="modal-input" type="text" name="user-name" id="user-name" required>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-label" for="user-phone">Phone</label>
+          <div class="modal-prefix">
+            <input class="modal-input" type="tel" name="user-phone" id="user-phone" required>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-label" for="user-email">Email</label>
+          <div class="modal-prefix">
+            <input class="modal-input" type="email" name="user-email" id="user-email" required>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-label" for="user-comment">Comment</label>
+          <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+        </div>
+
+        <div class="modal-checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="privacy-policy" required>
+            <span class="checkbox-icon">
+              <svg class="checkmark" width="10" height="6">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the <a href="#">Privacy Policy</a>
+          </label>
+        </div>
+        <button class="modal-button" type="submit">send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 
 </body>
+
 </html>
