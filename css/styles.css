@@ -499,6 +499,28 @@ img {
     fill: #f4f4fd;
 }
 
+.modal-footer-input {
+    width: 100%;
+    max-width: 264px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #f4f4fd;
+    outline: none;
+    transition: border-color 250ms ease-in-out;
+}
+.modal-footer-input::placeholder {
+    color: #f4f4fd;
+    opacity: 0.6;
+}
+
+.modal-footer-input:focus {
+    border-color: #4d5ae5;
+}
+
 /* ========= Modal ========= */
 
 .backdrop {
