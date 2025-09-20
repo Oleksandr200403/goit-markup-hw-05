@@ -532,12 +532,6 @@ img {
 }
 
 /* ========= Footer Subscribe Form ========= */
-.subscription-wrapper {
-        width: 453px;
-        height: 80px;
-        margin-left: 80px;
-}
-
 
 .subscription-heading {
     display: flex;
