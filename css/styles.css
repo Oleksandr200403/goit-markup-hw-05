@@ -623,6 +623,13 @@ img {
     --text-secondary: #8e8f99;
 }
 
+:root {
+    --primary-color: #4d5ae5;
+    --primary-hover-color: #404bbf;
+    --light-color: #f4f4fd;
+    --text-secondary: #8e8f99;
+}
+
 /* ========= Backdrop and Modal ========= */
 .backdrop {
     position: fixed;
