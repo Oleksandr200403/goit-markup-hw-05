@@ -623,14 +623,7 @@ img {
     --text-secondary: #8e8f99;
 }
 
-:root {
-    --primary-color: #4d5ae5;
-    --primary-hover-color: #404bbf;
-    --light-color: #f4f4fd;
-    --text-secondary: #8e8f99;
-}
-
-/* ========= Backdrop and Modal ========= */
+/* ========= Modal ========= */
 .backdrop {
     position: fixed;
     top: 0;
@@ -662,18 +655,17 @@ img {
     min-height: 584px;
     background-color: #fcfcfc;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-        0 1px 3px 0 rgba(0, 0, 0, 0.12),
-        0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-/* ========= Close Button ========= */
+/* ========= Close button ========= */
 .close-button {
     position: absolute;
     top: 24px;
@@ -707,7 +699,6 @@ img {
     fill: #ffffff;
 }
 
-/* ========= Modal Text ========= */
 .modal-text {
     font-weight: 500;
     font-size: 16px;
@@ -718,7 +709,7 @@ img {
     margin-bottom: 16px;
 }
 
-/* ========= Form ========= */
+/* ========= Modal Form ========= */
 .modal-form {
     display: flex;
     flex-direction: column;
@@ -726,8 +717,7 @@ img {
 
 .modal-prefix,
 .modal-prefix-comment {
-    margin-bottom: 8px;
-    /* враховано вимогу */
+    margin-bottom: 16px;
 }
 
 .modal-label {
@@ -745,13 +735,14 @@ img {
 }
 
 .modal-input {
-    width: 100%;
-    height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding-left: 38px;
-    outline: none;
+    width: 100%;
+    height: 40px;
     background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    font-weight: 400;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -764,20 +755,27 @@ img {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus~.input-icon {
+    fill: var(--primary-color);
 }
 
 .modal-textarea {
-    width: 100%;
-    height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    background-color: transparent;
-    padding: 8px 16px;
+    width: 100%;
+    height: 120px;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    padding: 8px 16px;
     resize: none;
-    outline: none;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -789,7 +787,7 @@ img {
     color: rgba(46, 47, 66, 0.4);
 }
 
-/* ========= Checkbox ========= */
+/* ========= Modal Checkbox ========= */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -797,44 +795,49 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
 .modal-checkbox {
-    margin-bottom: 8px;
-    /* враховано вимогу */
+    margin-bottom: 24px;
 }
 
 .custom-checkbox-label {
-    display: flex;
-    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--text-secondary);
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.custom-checkbox-icon {
+.checkbox-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    display: inline-flex;
-    /* враховано вимогу */
-    align-items: center;
-    justify-content: center;
     fill: transparent;
-    transition: background-color 250ms, border 250ms, fill 250ms;
-    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.custom-checkbox-input:checked+.custom-checkbox-label .custom-checkbox-icon {
+.custom-checkbox-input:checked+.custom-checkbox-label .checkbox-icon {
     background-color: var(--primary-hover-color);
     border: none;
     fill: var(--light-color);
+}
+
+.checkbox-svg {
+    width: 10px;
+    height: 8px;
 }
 
 .privacy-policy-link {
@@ -842,7 +845,7 @@ img {
     text-decoration: underline;
 }
 
-/* ========= Submit Button ========= */
+/* ========= Modal Submit Button ========= */
 .modal-button {
     display: block;
     min-width: 169px;
