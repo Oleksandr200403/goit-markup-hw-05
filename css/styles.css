@@ -437,6 +437,7 @@ img {
     flex-direction: column;
     justify-content: center;
 }
+
 .container {
     width: 1158px;
     max-width: 100%;
@@ -710,9 +711,11 @@ img {
     flex-direction: column;
 }
 
-.modal-prefix,
-.modal-prefix-comment {
+.modal-prefix {
     margin-bottom: 8px;
+}
+.modal-prefix-comment {
+    margin-bottom: 16px;
 }
 
 .modal-label {
@@ -805,7 +808,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--text-secondary);
-    display: flex;
     align-items: center;
     gap: 8px;
 }
